@@ -1,0 +1,5 @@
+@import 'variable';
+
+.conatiner{
+    @include flexCenter(space-between);
+}

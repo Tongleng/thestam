@@ -1,0 +1,11 @@
+@keyframes slideUp {
+  0% {top: 100%}
+  100% {top: 0%}
+}
+
+@mixin slideUpAnimation($animationDuration) {
+    animation-name: slideUp;
+    position: relative;
+    animation-duration: $animationDuration;  
+    animation-fill-mode: forwards;
+}

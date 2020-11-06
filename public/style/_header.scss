@@ -1,0 +1,52 @@
+@import 'variable';
+
+header{
+    width: 100%;
+    height: 200px;
+    @include flexCenter(space-between);
+}
+
+.logo-side{
+    width: 30%;
+    height: 100%;
+    @include flexCenter(start);
+    padding: 50px;
+}
+
+#logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 08px;
+    // background: linear-gradient(90deg,  rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(00,99,255,1) 100%);
+}
+
+nav{
+    width: 70%;
+    height: 100%;
+    @include flexCenter(space-evenly);
+}
+
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .8s;
+}
+
+li{
+    transition: .8s;
+    list-style-type: none;
+}
+
+li:hover a:hover {
+    @include onHover();
+}
+
+.about{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 0px 10px 0px 10px;
+    padding: 10px; 
+    a{
+        color: white;
+    }
+}

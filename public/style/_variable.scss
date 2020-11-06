@@ -1,0 +1,20 @@
+$theStamColor: #0099ff;
+
+@mixin onHover {
+    transition: .7s;
+    color: $theStamColor;
+}
+
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: $direction;
+    align-items: center;    
+}
+
+@mixin onHoverOverCard {
+    cursor: pointer;
+    width: 290px;
+    height: 490px;
+    transition: .6s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

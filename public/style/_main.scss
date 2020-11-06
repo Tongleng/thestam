@@ -1,0 +1,45 @@
+@import 'variable';
+@import 'animation';
+
+main{
+    width: 100%;
+    height: 700px;
+    @include flexCenter(center);
+    h1, p {
+        color: white;
+    }   
+}
+
+.wraper{
+    width: 100%;
+    height: 100%;
+    @include flexCenter(space-evenly);
+}
+
+.card{
+    @include flexCenter(center);
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: white;;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: radial-gradient(circle, rgba(181,195,214,1) 0%, rgba(51,101,161,1) 100%);
+    transition: .5s;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:nth-child(1){
+    @include slideUpAnimation(1s);
+}
+.card:nth-child(2){
+    @include slideUpAnimation(.8s);
+}
+.card:nth-child(3){
+    @include slideUpAnimation(.6s);
+}
+.card:nth-child(4){
+    @include slideUpAnimation(.4s);
+}
